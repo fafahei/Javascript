@@ -1,0 +1,95 @@
+﻿1. Browser Object
+var window = {
+	innerWidth:
+	innerHeight:
+	outerWidth:
+	outerHeight:
+};
+
+var navigator = {    //easy to modify by user
+	appName:
+	appVersion:
+	language:
+	platform:
+	userAgent:
+};
+
+var width = window.innerWdith ||document.body.clientWidth;
+
+var screen = {
+	width:
+	height:
+	colorDepth:
+};
+
+var location = {
+	href:
+	protocol:
+	host:
+	port:
+	pathname:
+	search:
+	hash:
+	assign: function () {},    //reload new page
+	reload: function () {}     //refresh
+};
+
+var document = {
+	title:
+	cookie:  //server use httpOnly
+	getElementById: function () {},
+	getElementByTagName: function () {}
+};
+
+var history = {             //don't use
+	back: function () {},
+	forward: function () {}
+	
+};
+
+2. DOM Operation
+get element (node):
+	document.getElementByClassName()
+	document.getElementById()
+	document.getElementByTagName()
+	document.querySelector()
+	document.querySelectorAll()
+	document.creatElement()
+update element:
+	e.innerHTML
+	e.innerText
+	e.textContent
+	e.style
+	e.style.color
+	...
+insert element:
+	e.appendChild()
+	e.insertBefore(newElement, referenceElement)
+delete element:
+	e.removeChild()
+
+3. Form Operation
+form element:
+	<input type="text">
+	<input type="password">
+	<input type="radio">
+	<input type="checkbox">
+	<select>
+	<input type="hidden">
+	<input type="date">
+	<input type="datetime">
+	<input type="datetime-local">
+	<input type="color">
+get value of element:
+	e.value
+	e.checked //radio checkbox
+submit form:
+	request =  new XMLHttpRequest();
+	request = new ActiveXObject('Microsoft.XMLHttp';
+	
+4. File Upload
+	<input type="file">  //enctype = multipart/form-data, method = post
+	
+5. jQuery
+
+  
